@@ -1,0 +1,513 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f8f8;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #b71c1c;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff7043;
+}
+
+.hero {
+    background: url('banner.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero .overlay {
+    background: rgba(183, 28, 28, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ff7043;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #e64a19;
+}
+
+.content {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 20px;
+}
+
+.card i {
+    font-size: 40px;
+    color: #b71c1c;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #b71c1c;
+    color: white;
+    margin-top: 40px;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #f9f9f9;
+    padding: 20px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 15px;
+    max-width: 95vw; 
+    padding: 10px;
+}
+
+
+.gallery-grid img {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 50px 20px;
+    max-width: 1600px; 
+    margin: auto;
+}
+
+
+.service-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    width: calc(25% - 40px); 
+    min-width: 400px; 
+    max-width: 450px; 
+}
+
+
+.service-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 18px rgba(0, 0, 0, 0.2);
+}
+
+
+.service-card img {
+    width: 100%;
+    height: 350px; 
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+
+.service-title {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 14px;
+    font-size: 26px; 
+    font-weight: bold;
+    border-radius: 0 0 14px 14px;
+}
+
+
+
+.about-section {
+    background: #f9f9f9;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    gap: 40px;
+}
+
+.about-text {
+    flex: 1;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.8;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+.about-text h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section {
+    background: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.contact-section p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border 0.3s ease-in-out;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #d35400;
+    outline: none;
+}
+
+
+.full-width {
+    width: 100%;
+}
+
+
+.btn-submit {
+    background: #d35400;
+    color: white;
+    font-size: 18px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn-submit:hover {
+    background: #b84300;
+}
+/* ======= Custom Printing & Services Pages ======= */
+
+.service-container {
+    display: flex;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+/* Left Side: Image Grid */
+/* Service Images Grid */
+.service-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; /* improved spacing */
+    width: 50%;
+    align-items: center;
+}
+
+.service-images a {
+    display: block;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-images a:hover {
+    transform: scale(1.05);
+}
+
+.service-images img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+
+/* Right Side: Service Information */
+.service-info {
+    width: 50%;
+}
+
+.service-info h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.service-info p, .service-info ul {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.service-info ul {
+    list-style: none;
+}
+
+.contact-box {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-box h3 {
+    font-size: 20px;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.contact-box p {
+    font-size: 16px;
+    color: #333;
+}
+
+.btn {
+    display: inline-block;
+    background: #d35400;
+    color: white;
+    font-size: 18px;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #b84300;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .service-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .service-images, .service-info {
+        width: 100%;
+    }
+}
+	
+/* ====== Image Modal ====== */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 999;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 10px;
+}
+
+.close-modal {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+    color: #bbb;
+}
+
+.modal-content {
+    animation-name: zoom;
+    animation-duration: 0.4s;
+}
+
+@keyframes zoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+/* Hover zoom-in effect */
+.service-images img {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.service-images img:hover {
+    transform: scale(1.08); /* Adjust size if needed */
+    box-shadow: 0 10px 15px rgba(0,0,0,0.15);
+}
+html {
+    scroll-behavior: smooth;
+}
